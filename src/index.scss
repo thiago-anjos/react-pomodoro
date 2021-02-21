@@ -1,0 +1,66 @@
+@function rem($size) {
+  @return $size / 16px * 1rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  background-color: #41e1ba;
+  transition: background-color 300ms ease-in-out;
+  line-height: 1.5;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+.working {
+  background-color: red;
+}
+
+.hidden {
+  display: none;
+}
+
+.pomodoro {
+  background-color: aliceblue;
+  margin: 50px 20px;
+  padding: 20px;
+  border-radius: 4px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  min-width: 360px;
+
+  h2 {
+    font-size: rem(24px);
+  }
+  .timer {
+    font-size: rem(64px);
+    text-align: center;
+  }
+
+  .controls {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  .details {
+    margin: rem(20px) 0;
+  }
+
+  button {
+    background-color: #41e1ba;
+    border: none;
+    cursor: pointer;
+    padding: rem(10px) rem(25px);
+    transition: background-color 300ms ease-in-out;
+    margin: 20px auto;
+  }
+}
