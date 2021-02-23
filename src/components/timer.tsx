@@ -1,12 +1,12 @@
 import React from 'react';
-import secondsToTime from 'utils/seconds-to-time';
+import secondsToMinutes from 'utils/seconds-to-minutes';
 
 type ButtonProps = {
   mainTime: number;
 };
 
 function TimerPomorodo({ mainTime }: ButtonProps): JSX.Element {
-  return <div className="timer">{secondsToTime(mainTime)}</div>;
+  return <div className="timer">{secondsToMinutes(mainTime)}</div>;
 }
 
 export default TimerPomorodo;
